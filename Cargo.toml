@@ -1,0 +1,28 @@
+[package]
+name = "webserver"
+version = "0.1.0"
+edition = "2018"
+license = "MPL v2.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio={ version = "1.10", features = ["full"] }
+dotenv = "0.15"
+
+[dependencies.serenity]
+default-features=false
+features=[
+    "builder",
+    "client",
+    "framework",
+    "gateway",
+    "http",
+    "model",
+    "standard_framework",
+    "rustls_backend",
+    "cache",
+    "voice",
+]
+
+version="0.10"
