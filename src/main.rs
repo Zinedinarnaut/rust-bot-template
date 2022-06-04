@@ -379,9 +379,6 @@ async fn help(ctx: &Context, msg: &Message) -> CommandResult {
                 .field("!unmute", "Unmutes a member.", false)
                 .field("!poll", "Starts a poll.", false)
                 .field("!help", "Shows this help.", false)
-                .footer(|f|
-                        f.text("Coded it rust-lang")
-                )
         })
     }).await;
 
@@ -409,9 +406,9 @@ async fn poll(ctx: &Context, msg: &Message) -> CommandResult {
                 m.embed(|e| {
                     e.title(topic).description(args.1).footer(|f| {
                         f.icon_url(
-                            "https://docs.rs/rust-logo-20210302-1.52.0-nightly-35dbef235.png",
+                            "https://cdn.discordapp.com/avatars/941197837885112330/927d4e9fbc4a4b1ee13ee2962a4b116c.png?size=256",
                         )
-                            .text("Coded it rust-lang")
+                            .text("Made by zinedin")
                     })
                 })
             })
